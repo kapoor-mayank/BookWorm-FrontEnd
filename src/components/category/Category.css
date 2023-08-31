@@ -1,0 +1,19 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 18rem;
+  /* Your card styles here */
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn-primary {
+  margin-top: 10px;
+}
