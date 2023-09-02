@@ -34,7 +34,9 @@ function EBookList() {
 
   function addToCart(productId, type) {
     const customerId = 1;
-
+    {if (!localStorage.getItem("Token")) {
+      window.location.href = "SignIn"; // Redirect to SignIn page
+    }}
     fetch("http://localhost:8080/api/cart/addtocart", {
       method: 'POST',
       headers: {
